@@ -5,10 +5,10 @@
     .controller('MainShoppingListController', MainShoppingListController);
     
     
-    MainShoppingListController.$inject = ['items'];
-    function MainShoppingListController(items) {
-      var mainList = this;
-      mainList.items = items;
+    MainShoppingListController.$inject = ['ShoppingListService', 'items'];
+    function MainShoppingListController(ShoppingListService, items) {
+      var mainlist = this;
+      mainlist.items = items;
     }
     
     })();
